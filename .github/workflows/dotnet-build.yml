@@ -1,0 +1,14 @@
+name: Workflow acionado por push e agendamento
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  exemplo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Workflow executado com sucesso!"
