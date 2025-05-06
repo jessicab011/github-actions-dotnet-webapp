@@ -8,7 +8,7 @@ on:
     - cron: '0 * * * *'
 
 jobs:
-  exemplo:
+  build:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Workflow executado com sucesso!"
